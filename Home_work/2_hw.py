@@ -8,10 +8,10 @@
 # b. в функцию добавьте аннотацию возвращаемых данных
 # c. добавьте вызов функции.
 
-def task_1(integer: int, tochka: float, string: str, spisok: list, truefalse: bool) -> list[type]:
-    return [type(integer), type(tochka), type(string), type(spisok), type(truefalse)]
-itog = task_1(1, 1.3, 'nadpis', [1, 2, 3, 4], False)
-print(itog)
+def task_1(integer_value: int, float_value: float, string_value: str, list_value: list, boolean_value: bool) -> list[type]:
+    return [type(integer_value), type(float_value), type(string_value), type(list_value), type(boolean_value)]
+resylt = task_1(1, 1.3, 'nadpis', [1, 2, 3, 4], False)
+print(resylt)
 
 
 
@@ -22,10 +22,10 @@ print(itog)
 # b. в функцию добавьте аннотацию возвращаемых данных
 # c. добавьте вызов функции.
 # d. * - скажите как называется эта последовательность чисел
-def task_2(a:list):
-    return list(a[0:2])
-itog_2 = task_2([1, 2, 3, 5, 8, 13, 21])
-print(itog_2)
+def task_2(list_value:list):
+    return list(list_value[0:2])
+result = task_2([1, 2, 3, 5, 8, 13, 21])
+print(result)
 # числа Фибоначчи
 
 
@@ -35,6 +35,6 @@ print(itog_2)
 # b. пропишите аннотации для функции и аргумента
 # c. распечатайте в консоль вызов функции
 
-def task_3(a:int):
-    return a ** 2
+def task_3(integer:int):
+    return integer ** 2
 print(task_3(5))
