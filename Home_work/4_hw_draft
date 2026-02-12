@@ -1,0 +1,34 @@
+# 1. создайте класс прямоугольника.
+# a. атрибуты - прямоугольнику можно задать ширину и высоту
+# b. методы - реализуйте 2 метода:
+# i. расчет площади прямоугольника
+# ii. расчет периметра прямоугольника
+# c. создайте 3 объекта, рассчитайте площадь и периметр для каждого. 
+# Результаты выводить в консоль.
+
+class Rectangle:
+    def __init__(self, weight, height):
+        self.weight = weight
+        self.height = height
+    
+    def area(self):
+        return self.weight * self.height
+    
+    def perimeter(self):
+        return (self.weight * 2) + (self.height * 2)
+    
+side_1 = Rectangle(3, 9)
+side_2 = Rectangle(5, 8)
+side_3 = Rectangle(12, 39)
+
+print("Площадь прямоугольников:")
+print(side_1.area())   
+print(side_2.area())
+print(side_3.area())
+
+print("\n")
+
+print("Периметр прямоугольников:")
+print(side_1.perimeter())
+print(side_2.perimeter())
+print(side_3.perimeter())
