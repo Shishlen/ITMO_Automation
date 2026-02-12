@@ -22,13 +22,52 @@ side_2 = Rectangle(5, 8)
 side_3 = Rectangle(12, 39)
 
 print("Площадь прямоугольников:")
-print(side_1.area())   
-print(side_2.area())
-print(side_3.area())
+print("Прямоугольник А: " , side_1.area())   
+print("Прямоугольник В: " , side_2.area())
+print("Прямоугольник С: " , side_3.area())
 
 print("\n")
 
 print("Периметр прямоугольников:")
-print(side_1.perimeter())
-print(side_2.perimeter())
-print(side_3.perimeter())
+print("Прямоугольник А: " , side_1.perimeter())
+print("Прямоугольник В: " , side_2.perimeter())
+print("Прямоугольник С: " , side_3.perimeter())
+
+
+# 2. Создайте класс Math.
+# a. Создайте два атрибута — a и b.
+# b. Напишите методы
+# i. addition — сложение,
+# ii. multiplication — умножение,
+# iii. division — деление,
+# iv. subtraction — вычитание.
+# При передаче в методы параметров a и b с ними нужно производить соответствующие действия 
+# и печатать ответ.
+
+class Math:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+        
+    def addition(self):
+        return self.a + self.b
+        
+    def multiplication(self):
+        return self.a * self.b
+    
+    def division(self):
+        return self.a % self.b
+        
+    def subtraction(self):
+        return self.a - self.b
+
+value_math = Math(13, 7)
+
+print("Сложение: ", value_math.division())
+print("Умножение: ", value_math.multiplication())
+print("Деление: ", value_math.division())
+print("Вычитание: ", value_math.subtraction())
+
+
+
+
