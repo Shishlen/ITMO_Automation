@@ -115,8 +115,8 @@ Current_car.stop_ignition()
 
 print("\n")
 
-print("Цвет: ", Current_car.color)
 print("Тип: ", Current_car.type)
 print("Год: ", Current_car.year)
+print("Цвет: ", Current_car.color)
 
 
