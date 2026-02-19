@@ -1,0 +1,143 @@
+# 1. создайте класс прямоугольника.
+# a. атрибуты - прямоугольнику можно задать ширину и высоту
+# b. методы - реализуйте 2 метода:
+# i. расчет площади прямоугольника
+# ii. расчет периметра прямоугольника
+# c. создайте 3 объекта, рассчитайте площадь и периметр для каждого.
+# Результаты выводить в консоль.
+
+class Rectangle:
+    def __init__(self, weight, height):
+        self.weight = weight
+        self.height = height
+
+    def area(self):
+        return self.weight * self.height
+
+    def perimeter(self):
+        return (self.weight * 2) + (self.height * 2)
+
+
+side_1 = Rectangle(3, 9)
+side_2 = Rectangle(5, 8)
+side_3 = Rectangle(12, 39)
+
+print("Площадь прямоугольников:")
+print("Прямоугольник А: ", side_1.area())
+print("Прямоугольник В: ", side_2.area())
+print("Прямоугольник С: ", side_3.area())
+
+print("\n")
+
+print("Периметр прямоугольников:")
+print("Прямоугольник А: ", side_1.perimeter())
+print("Прямоугольник В: ", side_2.perimeter())
+print("Прямоугольник С: ", side_3.perimeter())
+
+
+# 2. Создайте класс Math.
+# a. Создайте два атрибута — a и b.
+# b. Напишите методы
+# i. addition — сложение,
+# ii. multiplication — умножение,
+# iii. division — деление,
+# iv. subtraction — вычитание.
+# При передаче в методы параметров a и b с ними нужно производить соответствующие действия
+# и печатать ответ.
+
+class Math:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def addition(self):
+        return self.a + self.b
+
+    def multiplication(self):
+        return self.a * self.b
+
+    def division(self):
+        return self.a % self.b
+
+    def subtraction(self):
+        return self.a - self.b
+
+
+value_math = Math(13, 7)
+
+print("Сложение: ", value_math.division())
+print("Умножение: ", value_math.multiplication())
+print("Деление: ", value_math.division())
+print("Вычитание: ", value_math.subtraction())
+
+print("\n")
+
+# 3. откройте страницу https://demoqa.com/text-box
+# На странице присутствует сайдбар (меню слева)
+# a. Создайте объекты для каждой кнопки 2-го уровня вложенности (“Text Box” и т.п.)
+# Для этого опишите класс.
+# Каждый объект должен содержать в себе:
+# - текст кнопки (пример: “Text Box”)
+# - тип - одинаковый для всех “Кнопка”
+# - локатор - не заполнять, сделать по умолчанию пустой строкой
+# Также на кнопку можно нажать - реализуйте метод. Метод возвращает текст “Клик по кнопке { ТЕКСТ КНОПКИ }”
+# b. выведите текст для каждой кнопки
+# c. вызовите “Клик” для каждой кнопки
+
+
+
+# 4. В отдельном файле напишите программу с классом Car.
+# a. Создайте конструктор класса Car.
+# Создайте атрибуты класса Car — color (цвет), type (тип), year (год).
+# b. Напишите пять методов.
+# i. Первый — запуск автомобиля, при его вызове выводится сообщение «Автомобиль заведен».
+# ii. Второй — отключение автомобиля — выводит сообщение «Автомобиль заглушен».
+# iii. Третий — присвоение автомобилю года выпуска.
+# Четвертый метод — присвоение автомобилю типа.
+# iv. Пятый — присвоение автомобилю цвета.
+
+class Car:
+    def __init__(self, color, type, year):
+        self.color = color
+        self.type = type
+        self.year = year
+        self.ignition = False
+
+    def start_ignition(self):
+        self.ignition = True
+        print("Автомобиль заведен")
+
+    def stop_ignition(self):
+        self.ignition = False
+        print("Автомобиль заглушен")
+
+
+Current_car = Car("Black", "Sedan", "2016")
+Current_car.start_ignition()
+Current_car.stop_ignition()
+
+print("\n")
+
+print("Тип: ", Current_car.type)
+print("Год: ", Current_car.year)
+print("Цвет: ", Current_car.color)
+
+
+# 5. папка python_trening
+# Создайте файл task_9_checks.py
+# a. создайте класс Checks, принимающий 1 аргумент при инициализации (loc)
+# b. создайте для него метод check_text, метод возвращает self.loc
+# в файле task_9_oop_1.py
+# c. наследуйте все классы от класса Checks
+# i. чтобы использовать класс из другого файла его нужно импортировать
+# from название файла(без расширения) import название класса
+# d. переделайте все 4 класса в файле task_9_oop_1.py так чтоб в объектах можно было использовать методы родительского класса
+# e. распечатайте в консоль результаты метода .check_text() вызванного от каждого объекта классов файла task_9_oop_1.py
+
+class Checks:
+    def __init__(self, loc):
+        self.loc = loc
+
+    def check_test(self):
+        return self.loc
+
