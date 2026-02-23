@@ -84,6 +84,25 @@ print("\n")
 # b. выведите текст для каждой кнопки
 # c. вызовите “Клик” для каждой кнопки
 
+class Button:
+    def __init__(self, text, loc = " ", type_button = "Кнопка",):
+        self.text = text
+        self.type_button = type_button
+        self.loc = loc
+    def click(self):
+        return f"Клик по кнопке {self.text}"
+button_1 = Button("Add to card")
+button_2 = Button("Drop from card")
+
+print(button_2.text)
+print(button_1.text)
+
+print("\n")
+
+print(button_1.click())
+print(button_2.click())
+
+print("\n")
 
 
 # 4. В отдельном файле напишите программу с классом Car.
