@@ -91,16 +91,164 @@ class Button:
         self.loc = loc
     def click(self):
         return f"Клик по кнопке {self.text}"
-button_1 = Button("Add to card")
-button_2 = Button("Drop from card")
 
-print(button_2.text)
-print(button_1.text)
+# Кнопки раздела Elements
+
+elements_button_1 = Button("Text Box")
+elements_button_2 = Button("Check Box")
+elements_button_3 = Button("Radio Button")
+elements_button_4 = Button("Web Tables")
+elements_button_5 = Button("Buttons")
+elements_button_6 = Button("Links")
+elements_button_7 = Button("Broken Links - Images")
+elements_button_8 = Button("Upload and Download")
+elements_button_9 = Button("Dynamic Properties")
+
+# Кнопки раздела Forms
+
+forms_button_1 = Button("Practice Form")
+
+# Кнопки раздела Alerts, Frame & Windows (AFW)
+
+afw_button_1 = Button("Browser Windows")
+afw_button_2 = Button("Alerts")
+afw_button_3 = Button("Frames")
+afw_button_4 = Button("Nested Frames")
+afw_button_5 = Button("Modal Dialogs")
+
+# Кнопки раздела Widgets
+
+widgets_button_1 = Button("Accordian")
+widgets_button_2 = Button("Auto Complete")
+widgets_button_3 = Button("Date Picker")
+widgets_button_4 = Button("Slider")
+widgets_button_5 = Button("Progress Bar")
+widgets_button_6 = Button("Tabs")
+widgets_button_7 = Button("Tool Tips")
+widgets_button_8 = Button("Menu")
+widgets_button_9 = Button("Select Menu")
+
+# Кнопки раздела Interactions
+
+interactions_button_1 = Button("Sortable")
+interactions_button_2 = Button("Selectable")
+interactions_button_3 = Button("Resizable")
+interactions_button_4 = Button("Droppable")
+interactions_button_5 = Button("Dragabble")
+
+# Кнопки раздела Book Store Application (BSApp)
+
+bsapp_button_1 = Button("Login")
+bsapp_button_2 = Button("Book Store")
+bsapp_button_3 = Button("Profile")
+bsapp_button_4 = Button("Book Store API")
+
+
+print("РАЗДЕЛ ELEMENTS:")
+print(elements_button_1.text)
+print(elements_button_2.text)
+print(elements_button_3.text)
+print(elements_button_4.text)
+print(elements_button_5.text)
+print(elements_button_6.text)
+print(elements_button_7.text)
+print(elements_button_8.text)
+print(elements_button_9.text)
 
 print("\n")
 
-print(button_1.click())
-print(button_2.click())
+print(elements_button_1.click())
+print(elements_button_2.click())
+print(elements_button_3.click())
+print(elements_button_4.click())
+print(elements_button_5.click())
+print(elements_button_6.click())
+print(elements_button_7.click())
+print(elements_button_8.click())
+print(elements_button_9.click())
+
+print("\n")
+
+print("РАЗДЕЛ FORMS:")
+print(forms_button_1.text)
+
+print("\n")
+
+print(forms_button_1.click())
+
+print("\n")
+
+print("РАЗДЕЛ ALERTS, FRAME & WINDOWS:")
+print(afw_button_1.text)
+print(afw_button_2.text)
+print(afw_button_3.text)
+print(afw_button_4.text)
+print(afw_button_5.text)
+
+print("\n")
+
+print(afw_button_1.click())
+print(afw_button_2.click())
+print(afw_button_3.click())
+print(afw_button_4.click())
+print(afw_button_5.click())
+
+print("\n")
+
+print("РАЗДЕЛ WIDGETS:")
+print(widgets_button_1.text)
+print(widgets_button_2.text)
+print(widgets_button_3.text)
+print(widgets_button_4.text)
+print(widgets_button_5.text)
+print(widgets_button_6.text)
+print(widgets_button_7.text)
+print(widgets_button_8.text)
+print(widgets_button_9.text)
+
+print("\n")
+
+print(widgets_button_1.click())
+print(widgets_button_2.click())
+print(widgets_button_3.click())
+print(widgets_button_4.click())
+print(widgets_button_5.click())
+print(widgets_button_6.click())
+print(widgets_button_7.click())
+print(widgets_button_8.click())
+print(widgets_button_9.click())
+
+print("\n")
+
+print("РАЗДЕЛ INTERACTIONS:")
+print(interactions_button_1.text)
+print(interactions_button_2.text)
+print(interactions_button_3.text)
+print(interactions_button_4.text)
+print(interactions_button_5.text)
+
+print("\n")
+
+print(interactions_button_1.click())
+print(interactions_button_2.click())
+print(interactions_button_3.click())
+print(interactions_button_4.click())
+print(interactions_button_5.click())
+
+print("\n")
+
+print("РАЗДЕЛ BOOK STORE APPLICATION:")
+print(bsapp_button_1.text)
+print(bsapp_button_2.text)
+print(bsapp_button_3.text)
+print(bsapp_button_4.text)
+
+print("\n")
+
+print(bsapp_button_1.click())
+print(bsapp_button_2.click())
+print(bsapp_button_3.click())
+print(bsapp_button_4.click())
 
 print("\n")
 
