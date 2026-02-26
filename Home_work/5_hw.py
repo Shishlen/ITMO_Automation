@@ -10,13 +10,13 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
-driver.get("https://ok.ru/")
+driver.get("https://www.saucedemo.com/")
 
-username = driver.find_element(By.CSS_SELECTOR, '#field_email')
-password = driver.find_element(By.CSS_SELECTOR, '#field_password')
-submit = driver.find_element(By.XPATH, '//button[contains(text(), "Войти")]' )
+username = driver.find_element(By.CSS_SELECTOR, '#user-name')
+password = driver.find_element(By.CSS_SELECTOR, '#password')
+submit = driver.find_element(By.CSS_SELECTOR, '#login-button' )
 
-if username and password and submit:
+if username and password:
     print("Элементы найдены")
 else:
     print("Не все элементы найдены")
