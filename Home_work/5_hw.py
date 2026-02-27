@@ -16,7 +16,7 @@ username = driver.find_element(By.CSS_SELECTOR, '#user-name')
 password = driver.find_element(By.CSS_SELECTOR, '#password')
 submit = driver.find_element(By.CSS_SELECTOR, '#login-button' )
 
-if username and password:
+if username and password and submit:
     print("Элементы найдены")
 else:
     print("Не все элементы найдены")
